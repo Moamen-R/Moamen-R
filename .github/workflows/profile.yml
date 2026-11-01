@@ -1,40 +1,43 @@
 name: Update profile cards
+
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-       
+
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&border_radius=0&card_width=495&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&icon_color=E4402A&ring_color=C22B8E&custom_title=PLAYER%20STATS
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&icon_color=C22B8E&border_color=C22B8E&ring_color=E4402A&border_radius=0
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-       
+
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&border_radius=0&card_width=495&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&custom_title=WEAPONS%20OF%20CHOICE
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&border_color=C22B8E&border_radius=0
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-       
-      - name: Commit cards
+
+      - name: Commit stats cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
           git commit -m "Update profile cards" || exit 0
           git push
-       
+
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
@@ -42,11 +45,20 @@ jobs:
           outputs: |
             dist/snake.gif?color_snake=#FDA136&color_dots=#2A2152,#5A1F4A,#C22B8E,#E4402A,#FDA136&color_background=#161032
             dist/snake.svg?color_snake=#FDA136&color_dots=#2A2152,#5A1F4A,#C22B8E,#E4402A,#FDA136
-       
-      - name: Publish snake to output branch
+
+      - name: Push snake to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution activity graph
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 2
