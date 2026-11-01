@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" shape-rendering="crispEdges">
+  <style>
+    .box{fill:#120A2A;stroke:#221B45;animation:lit 5s linear infinite}
+    .b1{animation-delay:1s}
+    .b2{animation-delay:2s}
+    .b3{animation-delay:3s}
+    .b4{animation-delay:4s}
+    @keyframes lit{0%,18%{fill:#2A1440;stroke:#FDA136}22%,100%{fill:#120A2A;stroke:#221B45}}
+    .pk{animation:pk 5s linear infinite}
+    @keyframes pk{0%{transform:translateX(0);opacity:1}80%{transform:translateX(920px);opacity:1}100%{transform:translateX(1050px);opacity:0}}
+    .dash{stroke-dasharray:6 6;animation:dash .6s linear infinite}
+    @keyframes dash{to{stroke-dashoffset:-12}}
+    .bl{animation:b 1s steps(1) infinite}
+    @keyframes b{50%{opacity:0}}
+  </style>
+
+  <rect width="1200" height="220" fill="#0A0618"/>
+
+  <g font-family="'Courier New', Courier, monospace" font-weight="700">
+    <text x="40" y="44" font-size="16" fill="#C22B8E" letter-spacing="2">PIPELINE.EXE // RUNNING</text>
+    <rect class="bl" x="300" y="31" width="10" height="14" fill="#FDA136"/>
+
+    <rect class="dash" x="530" y="26" width="120" height="30" fill="none" stroke="#C22B8E" stroke-width="2"/>
+    <text x="590" y="46" font-size="13" fill="#C22B8E" text-anchor="middle">HUMAN REVIEW</text>
+    <line class="dash" x1="590" y1="56" x2="590" y2="80" stroke="#C22B8E" stroke-width="2"/>
+
+    <rect class="dash" x="990" y="26" width="120" height="30" fill="none" stroke="#FDA136" stroke-width="2"/>
+    <text x="1050" y="46" font-size="13" fill="#FDA136" text-anchor="middle">LIVE INSIGHTS</text>
+    <line class="dash" x1="1050" y1="56" x2="1050" y2="80" stroke="#FDA136" stroke-width="2"/>
+
+    <rect class="box" x="40" y="80" width="180" height="70" stroke-width="4"/>
+    <rect class="box b1" x="270" y="80" width="180" height="70" stroke-width="4"/>
+    <rect class="box b2" x="500" y="80" width="180" height="70" stroke-width="4"/>
+    <rect class="box b3" x="730" y="80" width="180" height="70" stroke-width="4"/>
+    <rect class="box b4" x="960" y="80" width="180" height="70" stroke-width="4"/>
+
+    <text x="130" y="110" font-size="17" fill="#EDEDF3" text-anchor="middle">01 INGEST</text>
+    <text x="130" y="134" font-size="13" fill="#FDA136" text-anchor="middle">INVOICES / RECEIPTS</text>
+    <text x="360" y="110" font-size="17" fill="#EDEDF3" text-anchor="middle">02 VISION AI</text>
+    <text x="360" y="134" font-size="13" fill="#FDA136" text-anchor="middle">DATA EXTRACTION</text>
+    <text x="590" y="110" font-size="17" fill="#EDEDF3" text-anchor="middle">03 ROUTER</text>
+    <text x="590" y="134" font-size="13" fill="#FDA136" text-anchor="middle">CONFIDENCE CHECK</text>
+    <text x="820" y="110" font-size="17" fill="#EDEDF3" text-anchor="middle">04 RECONCILE</text>
+    <text x="820" y="134" font-size="13" fill="#FDA136" text-anchor="middle">BANK / WALLET / CoA</text>
+    <text x="1050" y="110" font-size="17" fill="#EDEDF3" text-anchor="middle">05 ERP POST</text>
+    <text x="1050" y="134" font-size="13" fill="#FDA136" text-anchor="middle">DOUBLE-ENTRY</text>
+  </g>
+
+  <g stroke="#FDA136" stroke-width="3">
+    <line class="dash" x1="224" y1="115" x2="262" y2="115"/>
+    <line class="dash" x1="454" y1="115" x2="492" y2="115"/>
+    <line class="dash" x1="684" y1="115" x2="722" y2="115"/>
+    <line class="dash" x1="914" y1="115" x2="952" y2="115"/>
+  </g>
+  <g fill="#FDA136">
+    <polygon points="262,109 270,115 262,121"/>
+    <polygon points="492,109 500,115 492,121"/>
+    <polygon points="722,109 730,115 722,121"/>
+    <polygon points="952,109 960,115 952,121"/>
+  </g>
+
+  <rect x="40" y="180" width="1100" height="4" fill="#221B45"/>
+  <g fill="#C22B8E">
+    <rect x="128" y="176" width="4" height="12"/>
+    <rect x="358" y="176" width="4" height="12"/>
+    <rect x="588" y="176" width="4" height="12"/>
+    <rect x="818" y="176" width="4" height="12"/>
+    <rect x="1048" y="176" width="4" height="12"/>
+  </g>
+  <g class="pk">
+    <rect x="123" y="175" width="14" height="14" fill="#FDA136"/>
+    <rect x="127" y="179" width="6" height="6" fill="#E4402A"/>
+  </g>
+
+  <rect x="2" y="2" width="1196" height="216" fill="none" stroke="#221B45" stroke-width="4"/>
+</svg>
