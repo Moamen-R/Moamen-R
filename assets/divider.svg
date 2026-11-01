@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="px" width="48" height="24" patternUnits="userSpaceOnUse">
+      <rect x="0" y="6" width="12" height="12" fill="#FDA136"/>
+      <rect x="12" y="6" width="12" height="12" fill="#E4402A"/>
+      <rect x="24" y="6" width="12" height="12" fill="#C22B8E"/>
+      <rect x="36" y="10" width="12" height="4" fill="#221B45"/>
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="48 0" dur="1.5s" repeatCount="indefinite"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="24" fill="url(#px)"/>
+</svg>
