@@ -1,115 +1,114 @@
-<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="66" x2="0" y2="234" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FDA136"/>
+      <stop offset="0.55" stop-color="#E4402A"/>
+      <stop offset="1" stop-color="#C22B8E"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#C22B8E" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C22B8E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.35"/>
+    </pattern>
+    <clipPath id="floor">
+      <rect x="0" y="234" width="1200" height="66"/>
+    </clipPath>
+  </defs>
+  <style>
+    .tw{animation:tw 2.4s steps(2) infinite}
+    @keyframes tw{0%,100%{opacity:1}50%{opacity:.15}}
+    .sun{animation:float 4s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .glow{transform-box:fill-box;transform-origin:center;animation:pulse 4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+    .h{animation:run 3s linear infinite}
+    @keyframes run{from{transform:translateY(0)}to{transform:translateY(66px)}}
+    .cur{animation:blink 1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .gl{animation:glitch 6s steps(1) infinite}
+    @keyframes glitch{0%,92%,100%{transform:translate(0,0)}93%{transform:translate(-4px,0)}95%{transform:translate(4px,0)}97%{transform:translate(-2px,0)}}
+  </style>
 
-<img src="./assets/header.svg" width="100%" alt="Mo'men Refaey pixel art header"/>
+  <rect width="1200" height="300" fill="#0A0618"/>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=16&duration=3000&pause=900&color=FDA136&center=true&vCenter=true&width=900&height=50&lines=PRESS+START+TO+BUILD+OCTOFIN;FULL-STACK+DEVELOPER+%7C+MEAN+%2B+NEXT.JS;SOFTWARE+ENGINEERING+STUDENT;MULTI-AGENT+AI+SYSTEMS+BUILDER" alt="Typing intro"/></a>
+  <g fill="#EDEDF3">
+    <rect class="tw" x="80" y="30" width="4" height="4"/>
+    <rect class="tw" x="160" y="60" width="4" height="4" style="animation-delay:-.6s"/>
+    <rect class="tw" x="250" y="24" width="4" height="4" style="animation-delay:-1.2s"/>
+    <rect class="tw" x="340" y="48" width="4" height="4" style="animation-delay:-1.8s"/>
+    <rect class="tw" x="430" y="20" width="4" height="4" style="animation-delay:-.3s"/>
+    <rect class="tw" x="520" y="44" width="4" height="4" style="animation-delay:-.9s"/>
+    <rect class="tw" x="700" y="28" width="4" height="4" style="animation-delay:-1.5s"/>
+    <rect class="tw" x="760" y="80" width="4" height="4" style="animation-delay:-2.1s"/>
+    <rect class="tw" x="1110" y="190" width="4" height="4" style="animation-delay:-.4s"/>
+    <rect class="tw" x="660" y="170" width="4" height="4" style="animation-delay:-1.1s"/>
+    <rect class="tw" x="20" y="130" width="4" height="4" style="animation-delay:-1.7s"/>
+  </g>
+  <g fill="#FDA136">
+    <rect class="tw" x="610" y="64" width="6" height="6" style="animation-delay:-.8s"/>
+    <rect class="tw" x="840" y="22" width="6" height="6" style="animation-delay:-1.4s"/>
+    <rect class="tw" x="1080" y="44" width="6" height="6" style="animation-delay:-.2s"/>
+    <rect class="tw" x="1160" y="110" width="6" height="6" style="animation-delay:-2s"/>
+    <rect class="tw" x="790" y="200" width="6" height="6" style="animation-delay:-1s"/>
+  </g>
 
-<p>
-  <img src="https://komarev.com/ghpvc/?username=moamen-r&label=PLAYERS%20VISITED&color=E4402A&style=for-the-badge" alt="Profile views"/>
-  <img src="https://img.shields.io/badge/LOCATION-EGYPT-C22B8E?style=for-the-badge&labelColor=0A0618" alt="Location"/>
-  <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20CO--OP-FDA136?style=for-the-badge&labelColor=0A0618" alt="Status"/>
-</p>
+  <circle class="glow" cx="960" cy="150" r="150" fill="url(#glow)"/>
 
-<p>
-  <a href="https://www.linkedin.com/in/mo-men-refaey-545617374" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0A0618?style=for-the-badge&logo=linkedin&logoColor=FDA136" alt="LinkedIn"/></a>
-  <a href="https://twitter.com/moarefaey" target="_blank"><img src="https://img.shields.io/badge/X%20%2F%20TWITTER-0A0618?style=for-the-badge&logo=x&logoColor=E4402A" alt="X / Twitter"/></a>
-  <a href="https://dev.to/moamen.refaey" target="_blank"><img src="https://img.shields.io/badge/DEV.TO-0A0618?style=for-the-badge&logo=devdotto&logoColor=C22B8E" alt="Dev.to"/></a>
-  <a href="mailto:moamen.refaey@hotmail.com"><img src="https://img.shields.io/badge/EMAIL-0A0618?style=for-the-badge&logo=maildotru&logoColor=FDA136" alt="Email"/></a>
-  <a href="https://leetcode.com/moarefaey" target="_blank"><img src="https://img.shields.io/badge/LEETCODE-0A0618?style=for-the-badge&logo=leetcode&logoColor=E4402A" alt="LeetCode"/></a>
-</p>
+  <g class="sun" fill="url(#sun)">
+    <rect x="924" y="66" width="72" height="12"/>
+    <rect x="912" y="78" width="96" height="12"/>
+    <rect x="900" y="90" width="120" height="12"/>
+    <rect x="888" y="102" width="144" height="12"/>
+    <rect x="876" y="114" width="168" height="12"/>
+    <rect x="876" y="126" width="168" height="12"/>
+    <rect x="876" y="138" width="168" height="12"/>
+    <rect x="876" y="150" width="168" height="12"/>
+    <rect x="876" y="162" width="168" height="9"/>
+    <rect x="876" y="174" width="168" height="8"/>
+    <rect x="888" y="186" width="144" height="7"/>
+    <rect x="900" y="198" width="120" height="6"/>
+    <rect x="912" y="210" width="96" height="5"/>
+    <rect x="924" y="222" width="72" height="4"/>
+  </g>
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+  <rect x="0" y="234" width="1200" height="66" fill="#120A2A"/>
+  <rect x="0" y="232" width="1200" height="3" fill="#FDA136"/>
 
-</div>
+  <g clip-path="url(#floor)" stroke="#C22B8E" stroke-opacity="0.6" stroke-width="2">
+    <line x1="600" y1="234" x2="-600" y2="300"/>
+    <line x1="600" y1="234" x2="-200" y2="300"/>
+    <line x1="600" y1="234" x2="150" y2="300"/>
+    <line x1="600" y1="234" x2="400" y2="300"/>
+    <line x1="600" y1="234" x2="600" y2="300"/>
+    <line x1="600" y1="234" x2="800" y2="300"/>
+    <line x1="600" y1="234" x2="1050" y2="300"/>
+    <line x1="600" y1="234" x2="1400" y2="300"/>
+    <line x1="600" y1="234" x2="1800" y2="300"/>
+  </g>
+  <g clip-path="url(#floor)" fill="#C22B8E" fill-opacity="0.6">
+    <rect class="h" x="0" y="234" width="1200" height="2"/>
+    <rect class="h" x="0" y="234" width="1200" height="2" style="animation-delay:-1s"/>
+    <rect class="h" x="0" y="234" width="1200" height="2" style="animation-delay:-2s"/>
+  </g>
 
-<h2 align="center">▓▒░ PLAYER 1 ░▒▓</h2>
+  <g font-family="'Courier New', Courier, monospace" font-weight="700">
+    <text x="60" y="92" font-size="18" fill="#C22B8E" letter-spacing="2">PLAYER_01 // EGYPT</text>
+    <g class="gl">
+      <text x="65" y="170" font-size="64" fill="#E4402A">MO'MEN REFAEY</text>
+      <text x="60" y="165" font-size="64" fill="#EDEDF3">MO'MEN REFAEY</text>
+    </g>
+    <text x="60" y="210" font-size="20" fill="#FDA136">&gt; FULL-STACK DEV | AI SYSTEMS BUILDER</text>
+    <rect class="cur" x="512" y="194" width="12" height="20" fill="#FDA136"/>
+  </g>
 
-<div align="center">
-
-| STAT | VALUE |
-|:--|:--|
-| 🎮 Player | Mo'men Refaey |
-| ⚔️ Class | Full-Stack Developer |
-| 🧠 Subclass | AI Systems Builder |
-| 🎓 Guild | Software Engineering Student |
-| 🌍 Region | Egypt |
-| 🗺️ Quest | OctoFin — AI multi-agent enterprise accounting |
-| 🧰 Skills | MEAN · Next.js · .NET · Python · Go |
-| 🤝 Co-op | Open-source collaboration (VOID IDE welcome) |
-| 📫 Contact | moamen.refaey@hotmail.com |
-| ⚡ Perk | "A good laugh can debug any code... eventually." |
-
-</div>
-
-### 📜 QUEST LOG
-
-- 🔭 Currently building **[OctoFin](https://github.com/Moamen-R/OctoFin)**, an intelligent multi-agent system for end-to-end enterprise accounting.
-- 🌱 Leveling up in **Software Engineering** and advanced **multi-agent AI** concepts.
-- 👯 Open to co-op on innovative open-source projects, especially **[VOID IDE](https://github.com/voideditor/void#readme)**.
-- 💬 Ask me about the **MEAN Stack**, **AI development**, or anything tech.
-- ⚡ Fun fact: I believe a good laugh can debug any code... eventually.
-
-<div align="center">
-  <img src="./assets/divider.svg" width="100%" alt=""/>
-</div>
-
-<h2 align="center">▓▒░ CURRENT QUEST ░▒▓</h2>
-
-<div align="center">
-  <a href="https://github.com/Moamen-R/OctoFin"><img src="./assets/octofin.svg" width="100%" alt="OctoFin: AI multi-agent enterprise accountant"/></a>
-</div>
-
-> **OctoFin** is a multi-agent financial workflow system that automates corporate bookkeeping with 100% mathematical accuracy. It combines Vision AI for document comprehension with a deterministic Python engine for calculations. The system extracts data from unstructured invoices and receipts, reconciles bank and digital wallet transactions, maps entries to the Chart of Accounts, and posts validated double-entry journals directly into ERP systems. Confidence-based routing and human-in-the-loop approval guardrails catch anomalies and keep full financial control.
-
-<div align="center">
-  <img src="./assets/pipeline.svg" width="100%" alt="OctoFin pipeline animation"/>
-</div>
-
-<div align="center">
-
-| Module | What it does |
-|:--|:--|
-| 👁️ **Vision AI Extraction** | Reads unstructured invoices and receipts |
-| 🧮 **Deterministic Python Engine** | Runs every calculation for 100% mathematical accuracy |
-| 🔁 **Reconciliation Agent** | Matches bank and digital wallet transactions |
-| 📒 **CoA Mapping + ERP Posting** | Posts validated double-entry journals into the ERP |
-| 🚦 **Confidence Routing** | Sends anomalies to human-in-the-loop approval |
-| 📈 **Real-Time Insights** | Live visibility into the company's financials |
-
-<a href="https://github.com/Moamen-R/OctoFin"><img src="https://img.shields.io/badge/VIEW%20QUEST-OCTOFIN-E4402A?style=for-the-badge&logo=github&logoColor=EDEDF3&labelColor=0A0618" alt="View OctoFin"/></a>
-
-<img src="./assets/divider.svg" width="100%" alt=""/>
-
-</div>
-
-<h2 align="center">▓▒░ INVENTORY ░▒▓</h2>
-
-<div align="center">
-  <h3>⚔️ FRONTEND</h3>
-  <img src="https://skillicons.dev/icons?i=angular,react,nextjs,ts,js,redux,html,css,tailwind,sass&theme=dark&perline=10" alt="Frontend stack"/>
-  <h3>🛡️ BACKEND</h3>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,py,go,graphql&theme=dark" alt="Backend stack"/>
-  <h3>💎 DATABASES + BAAS</h3>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,firebase,appwrite&theme=dark" alt="Databases"/>
-  <h3>🧰 TOOLS + DEVOPS</h3>
-  <img src="https://skillicons.dev/icons?i=git,docker,kubernetes,linux,figma,jest&theme=dark" alt="Tools and DevOps"/>
-  <br/><br/>
-  <img src="./assets/divider.svg" width="100%" alt=""/>
-</div>
-
-<h2 align="center">▓▒░ HIGH SCORES ░▒▓</h2>
-
-<div align="center">
-  <img src="./profile/stats.svg" width="49%" alt="GitHub stats"/>
-  <img src="./profile/top-langs.svg" width="49%" alt="Top languages"/>
-  <br/><br/>
-  <img src="https://streak-stats.demolab.com?user=Moamen-R&background=0A0618&border=FDA136&stroke=221B45&ring=E4402A&fire=FDA136&currStreakNum=EDEDF3&sideNums=EDEDF3&currStreakLabel=FDA136&sideLabels=EDEDF3&dates=C22B8E&hide_border=true&card_width=900" width="100%" alt="Streak stats"/>
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Moamen-R&bg_color=0A0618&color=EDEDF3&line=E4402A&point=FDA136&area=true&area_color=C22B8E&title_color=FDA136&hide_border=true&custom_title=XP%20GAINED%20-%20LAST%2031%20DAYS" width="100%" alt="Contribution activity graph"/>
-  <h3>🐍 BOSS FIGHT: CONTRIBUTION SNAKE</h3>
-  <img src="https://raw.githubusercontent.com/Moamen-R/Moamen-R/output/snake.svg" width="100%" alt="Contribution snake"/>
-  <br/><br/>
-  <img src="./assets/divider.svg" width="100%" alt=""/>
-  <br/>
-  <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&duration=2500&pause=800&color=E4402A&center=true&vCenter=true&width=900&height=40&lines=GAME+OVER%3F+NEVER.;INSERT+COIN+TO+COLLABORATE;THANKS+FOR+VISITING%2C+PLAYER+2" alt="Footer"/>
-</div>
+  <rect width="1200" height="300" fill="url(#scan)"/>
+  <rect x="2" y="2" width="1196" height="296" fill="none" stroke="#221B45" stroke-width="4"/>
+  <g fill="#FDA136">
+    <rect x="0" y="0" width="12" height="12"/>
+    <rect x="1188" y="0" width="12" height="12"/>
+    <rect x="0" y="288" width="12" height="12"/>
+    <rect x="1188" y="288" width="12" height="12"/>
+  </g>
+</svg>
