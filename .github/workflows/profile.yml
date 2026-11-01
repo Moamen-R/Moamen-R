@@ -13,13 +13,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout latest main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Generate activity graph
+        continue-on-error: true
         run: python3 .github/scripts/activity_graph.py
         env:
           GH_USER: ${{ github.repository_owner }}
@@ -45,9 +54,23 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
-          git commit -m "Update profile cards" || exit 0
-          git push
+          git add profile/
+          if git diff --cached --quiet; then
+            echo "No card changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update profile cards"
+          for attempt in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push origin HEAD:main; then
+              echo "Cards pushed."
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push attempt $attempt failed; retrying in 5s..."
+            sleep 5
+          done
+          echo "::error::Could not push cards. Check Settings > Actions > General > Workflow permissions (Read and write)."
+          exit 1
 
       - name: Generate contribution snake
         uses: Platane/snk@v3
