@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="seg" x="494" y="264" width="14" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#FDA136"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.35"/>
+    </pattern>
+  </defs>
+  <style>
+    .bob{animation:bob 2.4s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .t{transform-box:fill-box;transform-origin:50% 0;animation:wig 1.2s ease-in-out infinite}
+    .t2{animation-delay:-.3s}
+    .t3{animation-delay:-.6s}
+    .t4{animation-delay:-.9s}
+    @keyframes wig{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+    .eye{transform-box:fill-box;transform-origin:center;animation:blink 4s infinite}
+    @keyframes blink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+    .sh{transform-box:fill-box;transform-origin:center;animation:sh 2.4s ease-in-out infinite}
+    @keyframes sh{0%,100%{transform:scaleX(1);opacity:.9}50%{transform:scaleX(.8);opacity:.5}}
+    .coin{opacity:0;animation:rise 3s linear infinite}
+    .c2{animation-delay:1s}
+    .c3{animation-delay:2s}
+    @keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(-140px);opacity:0}}
+    .bl{animation:b 1s steps(1) infinite}
+    @keyframes b{50%{opacity:0}}
+  </style>
+
+  <rect width="1200" height="320" fill="#0A0618"/>
+
+  <rect class="sh" x="184" y="262" width="120" height="8" fill="#221B45"/>
+
+  <g transform="translate(0 30)">
+    <g class="bob">
+      <g fill="#C22B8E">
+        <rect x="208" y="60" width="72" height="12"/>
+        <rect x="196" y="72" width="96" height="12"/>
+        <rect x="184" y="84" width="120" height="12"/>
+        <rect x="184" y="96" width="120" height="12"/>
+        <rect x="184" y="108" width="120" height="12"/>
+        <rect x="184" y="120" width="120" height="12"/>
+        <rect x="184" y="132" width="120" height="12"/>
+        <rect x="196" y="144" width="96" height="12"/>
+        <rect x="184" y="156" width="120" height="12"/>
+      </g>
+      <rect x="208" y="72" width="12" height="12" fill="#EDEDF3" fill-opacity="0.6"/>
+      <g class="eye">
+        <rect x="208" y="96" width="24" height="24" fill="#EDEDF3"/>
+        <rect x="256" y="96" width="24" height="24" fill="#EDEDF3"/>
+        <rect x="220" y="108" width="12" height="12" fill="#0A0618"/>
+        <rect x="268" y="108" width="12" height="12" fill="#0A0618"/>
+      </g>
+      <rect x="196" y="120" width="12" height="12" fill="#FDA136"/>
+      <rect x="280" y="120" width="12" height="12" fill="#FDA136"/>
+      <g class="t">
+        <rect x="184" y="168" width="12" height="12" fill="#C22B8E"/>
+        <rect x="172" y="180" width="12" height="12" fill="#E4402A"/>
+        <rect x="160" y="192" width="12" height="12" fill="#FDA136"/>
+      </g>
+      <g class="t t2">
+        <rect x="220" y="168" width="12" height="12" fill="#C22B8E"/>
+        <rect x="208" y="180" width="12" height="12" fill="#E4402A"/>
+        <rect x="208" y="192" width="12" height="12" fill="#FDA136"/>
+      </g>
+      <g class="t t3">
+        <rect x="256" y="168" width="12" height="12" fill="#C22B8E"/>
+        <rect x="268" y="180" width="12" height="12" fill="#E4402A"/>
+        <rect x="268" y="192" width="12" height="12" fill="#FDA136"/>
+      </g>
+      <g class="t t4">
+        <rect x="292" y="168" width="12" height="12" fill="#C22B8E"/>
+        <rect x="304" y="180" width="12" height="12" fill="#E4402A"/>
+        <rect x="316" y="192" width="12" height="12" fill="#FDA136"/>
+      </g>
+    </g>
+  </g>
+
+  <g class="coin">
+    <rect x="370" y="250" width="16" height="16" fill="#FDA136"/>
+    <rect x="376" y="254" width="4" height="8" fill="#E4402A"/>
+  </g>
+  <g class="coin c2">
+    <rect x="345" y="250" width="16" height="16" fill="#FDA136"/>
+    <rect x="351" y="254" width="4" height="8" fill="#E4402A"/>
+  </g>
+  <g class="coin c3">
+    <rect x="392" y="250" width="16" height="16" fill="#FDA136"/>
+    <rect x="398" y="254" width="4" height="8" fill="#E4402A"/>
+  </g>
+
+  <g font-family="'Courier New', Courier, monospace" font-weight="700">
+    <text x="420" y="100" font-size="18" fill="#C22B8E" letter-spacing="2">// CURRENT QUEST</text>
+    <text x="425" y="165" font-size="72" fill="#E4402A">OCTOFIN</text>
+    <text x="420" y="160" font-size="72" fill="#EDEDF3">OCTOFIN</text>
+    <text x="420" y="200" font-size="20" fill="#FDA136">AI MULTI-AGENT ENTERPRISE ACCOUNTANT</text>
+    <text x="420" y="232" font-size="15" fill="#EDEDF3" fill-opacity="0.8">INVOICES &gt; RECONCILIATION &gt; ERP JOURNALS &gt; INSIGHTS</text>
+    <text x="420" y="274" font-size="14" fill="#EDEDF3">BUILD</text>
+    <text class="bl" x="905" y="274" font-size="14" fill="#C22B8E">IN DEV</text>
+  </g>
+  <rect x="490" y="260" width="400" height="18" fill="none" stroke="#FDA136" stroke-width="2"/>
+  <rect x="494" y="264" width="0" height="10" fill="url(#seg)">
+    <animate attributeName="width" values="0;392;392" keyTimes="0;0.85;1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect width="1200" height="320" fill="url(#scan)"/>
+  <rect x="2" y="2" width="1196" height="316" fill="none" stroke="#221B45" stroke-width="4"/>
+  <g fill="#C22B8E">
+    <rect x="0" y="0" width="12" height="12"/>
+    <rect x="1188" y="0" width="12" height="12"/>
+    <rect x="0" y="308" width="12" height="12"/>
+    <rect x="1188" y="308" width="12" height="12"/>
+  </g>
+</svg>
