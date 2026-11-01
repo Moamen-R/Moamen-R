@@ -1,11 +1,9 @@
 <!-- ═══════════════════ ANIMATED HEADER ═══════════════════ -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,100:8A2BE2&height=230&section=header&text=Mo%27men%20Refaey&fontSize=58&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Enthusiast%20%E2%80%A2%20Open%20Source&descSize=17&descAlignY=60" alt="header"/>
-
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=650&lines=Full-Stack+Developer+(MEAN+%2F+MERN);AI+Multi-Agent+Systems+Engineer;Software+Engineering+Student;Currently+building+OctoFin;Always+learning+new+things" alt="Typing SVG"/>
-  </a>
+  <img width="100%" src="./assets/header.svg" alt="Mo'men Refaey — Full-Stack Developer & AI Engineer"/>
 </div>
+
+<br/>
 
 <!-- ═══════════════════ CONNECT ═══════════════════ -->
 <div align="center">
@@ -27,20 +25,22 @@
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=moamen-r&label=Profile%20Views&color=0077B5&style=for-the-badge" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=moamen-r&label=Profile%20Views&color=8A2BE2&style=for-the-badge" alt="Profile views"/>
   <a href="https://github.com/Moamen-R?tab=followers">
-    <img src="https://img.shields.io/github/followers/Moamen-R?label=Followers&style=for-the-badge&logo=github&color=181717" alt="Followers"/>
+    <img src="https://img.shields.io/github/followers/Moamen-R?label=Followers&style=for-the-badge&logo=github&color=0B0F19" alt="Followers"/>
   </a>
 </div>
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:8A2BE2,100:FF4FD8&height=2" alt="divider"/>
+
 ## 🚀 About Me
 
-> *Full-Stack Developer & Software Engineering student from Egypt 🇪🇬 — engineering the bridge between intelligent AI agents and rock-solid financial systems.*
+> *Full-Stack Developer & Software Engineering student from Egypt 🇪🇬. I connect intelligent AI agents with reliable financial systems.*
 
-- 🔭 Currently building **[OctoFin](https://github.com/Moamen-R/OctoFin)** — a multi-agent AI system automating enterprise accounting end-to-end
-- 🌱 Deepening my knowledge in **Software Engineering**, **multi-agent architectures** & advanced **AI** concepts
+- 🔭 Currently building **[OctoFin](https://github.com/Moamen-R/OctoFin)**, a multi-agent AI system that automates enterprise accounting end to end
+- 🌱 Deepening my knowledge in **Software Engineering**, **multi-agent architectures** and advanced **AI** concepts
 - 👯 Open to collaborating on innovative open-source projects, especially **[VOID IDE](https://github.com/voideditor/void#readme)**
-- 💬 Ask me about the **MEAN/MERN Stack**, **AI development**, or **fintech automation**
+- 💬 Ask me about the **MEAN/MERN Stack**, **AI development** or **fintech automation**
 - 📫 Reach me at **moamen.refaey@hotmail.com**
 - ⚡ Fun fact: I believe a good laugh can debug any code… eventually 😄
 
@@ -66,11 +66,15 @@ const momen: Developer = {
 
 </details>
 
-## 🐙 Featured Project — OctoFin
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:8A2BE2,100:FF4FD8&height=2" alt="divider"/>
 
-> **AI Enterprise Automation Accountant** — an intelligent multi-agent system that automates end-to-end enterprise accounting: from invoice extraction and payment reconciliation to ERP journal posting and real-time financial insights.
+## 🐙 Featured Project: OctoFin
 
-OctoFin combines **Vision AI** for document comprehension with a **deterministic Python engine** for calculations — guaranteeing **100% mathematical accuracy**. It extracts data from unstructured invoices & receipts, reconciles bank and digital-wallet transactions, maps entries to the Chart of Accounts, and posts validated double-entry journals directly into ERP systems, with **confidence-based routing** and **human-in-the-loop guardrails** for anomalies.
+> **AI Enterprise Automation Accountant.** An intelligent multi-agent system that automates end-to-end enterprise accounting, from invoice extraction and payment reconciliation to ERP journal posting and real-time financial insights.
+
+OctoFin is designed to automate corporate bookkeeping with **100% mathematical accuracy**. It combines **Vision AI** for document comprehension with a **deterministic Python engine** for calculations.
+
+The system extracts data from unstructured invoices and receipts, reconciles bank and digital-wallet transactions, maps entries to the Chart of Accounts, and posts validated double-entry journals directly into ERP systems. For complete financial control, it uses **confidence-based routing** and **human-in-the-loop approval guardrails** for anomalies.
 
 ### 🔄 The Autonomous Pipeline
 
@@ -90,16 +94,16 @@ flowchart LR
 
 <table>
   <tr>
-    <td width="50%"><b>👁️ Vision AI Extraction</b><br/>Reads unstructured invoices & receipts with document-level comprehension.</td>
+    <td width="50%"><b>👁️ Vision AI Extraction</b><br/>Reads unstructured invoices and receipts with document-level comprehension.</td>
     <td width="50%"><b>🎯 Deterministic Accuracy</b><br/>A Python calculation engine guarantees 100% mathematical precision.</td>
   </tr>
   <tr>
-    <td><b>🔄 Smart Reconciliation</b><br/>Automatically matches bank & digital-wallet transactions.</td>
-    <td><b>📒 Chart of Accounts Mapping</b><br/>Intelligent account classification for every entry.</td>
+    <td><b>🔄 Smart Reconciliation</b><br/>Automatically matches bank and digital-wallet transactions.</td>
+    <td><b>📒 Chart of Accounts Mapping</b><br/>Classifies every entry into the correct account.</td>
   </tr>
   <tr>
-    <td><b>🧾 ERP Journal Posting</b><br/>Validated double-entry journals pushed straight into your ERP.</td>
-    <td><b>🛡️ Approval Guardrails</b><br/>Confidence-based routing with human-in-the-loop control.</td>
+    <td><b>🧾 ERP Journal Posting</b><br/>Pushes validated double-entry journals straight into your ERP.</td>
+    <td><b>🛡️ Approval Guardrails</b><br/>Routes entries by confidence and keeps a human in the loop for anomalies.</td>
   </tr>
 </table>
 
@@ -111,13 +115,15 @@ flowchart LR
   <img src="https://img.shields.io/badge/Human--in--the--Loop-2EA44F?style=for-the-badge" alt="HITL"/>
   <br/><br/>
   <a href="https://github.com/Moamen-R/OctoFin">
-    <img src="https://img.shields.io/badge/🐙_Explore_OctoFin-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="Explore OctoFin"/>
+    <img src="https://img.shields.io/badge/🐙_Explore_OctoFin-0B0F19?style=for-the-badge&logo=github&logoColor=white" alt="Explore OctoFin"/>
   </a>
 </div>
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:8A2BE2,100:FF4FD8&height=2" alt="divider"/>
+
 ## 🛠️ Tech Arsenal
 
-<table>
+<table align="center">
   <tr>
     <td align="center" width="190"><b>🎨 Frontend</b></td>
     <td><img src="https://skillicons.dev/icons?i=angular,react,nextjs,ts,js,redux,html,css,tailwind,sass&theme=dark" alt="Frontend"/></td>
@@ -136,19 +142,21 @@ flowchart LR
   </tr>
 </table>
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:8A2BE2,100:FF4FD8&height=2" alt="divider"/>
+
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=moamen-r&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub stats"/>
-  <img width="49%" src="https://streak-stats.demolab.com?user=moamen-r&theme=tokyonight&hide_border=true&border_radius=12" alt="GitHub streak"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=moamen-r&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&count_private=true&include_all_commits=true&rank_icon=github&bg_color=0B0F19&title_color=00D4FF&icon_color=8A2BE2" alt="GitHub stats"/>
+  <img width="49%" src="https://streak-stats.demolab.com?user=moamen-r&theme=tokyonight&hide_border=true&border_radius=12&background=0B0F19&ring=8A2BE2&fire=FF4FD8&currStreakLabel=00D4FF" alt="GitHub streak"/>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=moamen-r&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&border_radius=12" alt="Top languages"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=moamen-r&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0B0F19&title_color=00D4FF" alt="Top languages"/>
 </div>
 
 <div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/api/graph?username=moamen-r&theme=tokyo-night&hide_border=true&area=true" alt="Contribution graph"/>
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/api/graph?username=moamen-r&bg_color=0B0F19&color=00D4FF&line=8A2BE2&point=FF4FD8&area=true&area_color=8A2BE2&hide_border=true&radius=12" alt="Contribution graph"/>
 </div>
 
 <details>
@@ -159,13 +167,13 @@ flowchart LR
 </div>
 </details>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:8A2BE2,100:FF4FD8&height=2" alt="divider"/>
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev quote"/>
   <br/><br/>
-  <b>⭐️ From <a href="https://github.com/Moamen-R">Moamen-R</a> — let's build something intelligent together.</b>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile!;Let's+build+something+intelligent+together+%F0%9F%9A%80" alt="Outro typing"/>
 </div>
 
-<!-- ═══════════════════ ANIMATED FOOTER ═══════════════════ -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8A2BE2,100:00BFFF&height=150&section=footer" alt="footer"/>
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:8A2BE2,100:FF4FD8&height=4&section=footer" alt="footer"/>
