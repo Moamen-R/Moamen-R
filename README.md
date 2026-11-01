@@ -24,26 +24,17 @@
 
 <h2>▓▒░ PLAYER 1 ░▒▓</h2>
 
-<table>
-  <tr><td><b>PLAYER</b></td><td>Mo'men Refaey</td></tr>
-  <tr><td><b>CLASS</b></td><td>Full-Stack Developer</td></tr>
-  <tr><td><b>SUBCLASS</b></td><td>AI Systems Builder</td></tr>
-  <tr><td><b>GUILD</b></td><td>Software Engineering Student</td></tr>
-  <tr><td><b>REGION</b></td><td>Egypt</td></tr>
-  <tr><td><b>MAIN QUEST</b></td><td>OctoFin: AI multi-agent enterprise accounting</td></tr>
-  <tr><td><b>CO-OP</b></td><td>Open-source collaboration (VOID IDE welcome)</td></tr>
-  <tr><td><b>PERK</b></td><td>"A good laugh can debug any code... eventually."</td></tr>
-</table>
+<img src="./assets/player-card.svg" width="100%" alt="Player 1 character sheet: Mo'men Refaey, Full-Stack Developer and AI Systems Builder from Egypt"/>
 
 </div>
 
-<h3>🕹️ QUEST LOG</h3>
+<h3>📜 QUEST LOG</h3>
 
-- 🔭 Currently building **[OctoFin](https://github.com/Moamen-R/OctoFin)**, an intelligent multi-agent system for end-to-end enterprise accounting
-- 🌱 Leveling up in **Software Engineering**, multi-agent architectures, and applied AI
-- 👯 Open to co-op on innovative open-source projects, especially **[VOID IDE](https://github.com/voideditor/void#readme)**
-- 💬 Ask me about the **MEAN Stack**, **AI development**, or anything tech
-- 📫 Reach me at **moamen.refaey@hotmail.com**
+- 🔭 Currently building **[OctoFin](https://github.com/Moamen-R/OctoFin)**, an intelligent multi-agent system for end-to-end enterprise accounting.
+- 🌱 Leveling up in **Software Engineering** and advanced **multi-agent AI** concepts.
+- 👯 Open to co-op on innovative open-source projects, especially **[VOID IDE](https://github.com/voideditor/void#readme)**.
+- 💬 Ask me about the **MEAN Stack**, **AI development**, or anything tech.
+- ⚡ Fun fact: I believe a good laugh can debug any code... eventually.
 
 <div align="center">
 
@@ -63,16 +54,9 @@ It is designed to automate corporate bookkeeping with 100% mathematical accuracy
 
 <img src="./assets/pipeline.svg" width="100%" alt="OctoFin animated pipeline"/>
 
-<table>
-  <tr><th>MODULE</th><th>ABILITY</th></tr>
-  <tr><td>👁️ Vision Extraction</td><td>Reads unstructured invoices and receipts</td></tr>
-  <tr><td>🧮 Deterministic Engine</td><td>Python math core for exact calculations</td></tr>
-  <tr><td>🔁 Reconciliation</td><td>Matches bank and digital wallet transactions</td></tr>
-  <tr><td>🗂️ Account Mapping</td><td>Maps entries to the Chart of Accounts</td></tr>
-  <tr><td>📒 ERP Posting</td><td>Posts validated double-entry journals</td></tr>
-  <tr><td>🛡️ Guardrails</td><td>Confidence routing and human approval for anomalies</td></tr>
-  <tr><td>📈 Insights</td><td>Real-time financial dashboards</td></tr>
-</table>
+<img src="./assets/modules.svg" width="100%" alt="OctoFin modules: Vision AI Extraction, Deterministic Python Engine, Reconciliation Agent, CoA Mapping and ERP Posting, Confidence Routing, Real-Time Insights"/>
+
+<a href="https://github.com/Moamen-R/OctoFin"><img src="https://img.shields.io/badge/VIEW%20QUEST-OCTOFIN-E4402A?style=for-the-badge&logo=github&logoColor=EDEDF3&labelColor=0A0618" alt="View OctoFin"/></a>
 
 <img src="./assets/divider.svg" width="100%" alt="divider"/>
 
@@ -97,11 +81,11 @@ It is designed to automate corporate bookkeeping with 100% mathematical accuracy
 <img src="./profile/stats.svg" width="49%" alt="GitHub stats"/>
 <img src="./profile/top-langs.svg" width="49%" alt="Top languages"/>
 
-<img src="https://streak-stats.demolab.com?user=Moamen-R&background=0A0618&border=C22B8E&stroke=C22B8E&ring=FDA136&fire=E4402A&currStreakNum=EDEDF3&sideNums=EDEDF3&currStreakLabel=FDA136&sideLabels=FDA136&dates=8A84A8" width="100%" alt="Streak stats"/>
+<img src="https://streak-stats.demolab.com?user=Moamen-R&background=0A0618&border=C22B8E&stroke=C22B8E&ring=E4402A&fire=FDA136&currStreakNum=EDEDF3&sideNums=EDEDF3&currStreakLabel=FDA136&sideLabels=EDEDF3&dates=C22B8E&hide_border=true" width="100%" alt="Streak stats"/>
 
-<img src="./profile-summary-card-output/radical/0-profile-details.svg" width="100%" alt="Contribution activity graph"/>
+<img src="./profile/activity.svg" width="100%" alt="Contribution activity graph"/>
 
-<h2>▓▒░ SNAKE ARENA ░▒▓</h2>
+<h2>🐍 BOSS FIGHT: CONTRIBUTION SNAKE</h2>
 
 <img src="https://raw.githubusercontent.com/Moamen-R/Moamen-R/output/snake.gif" width="100%" alt="Contribution snake arena"/>
 
