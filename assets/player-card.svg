@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="460" viewBox="0 0 900 460" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      .mono{font-family:'Courier New',Consolas,'DejaVu Sans Mono',monospace}
+      .frame{animation:frame 6s steps(3) infinite}
+      @keyframes frame{0%{fill:#C22B8E}33%{fill:#E4402A}66%{fill:#FDA136}100%{fill:#C22B8E}}
+      .bob{animation:bob 1.2s linear infinite}
+      @keyframes bob{0%,49%{transform:translateY(0)}50%,100%{transform:translateY(-6px)}}
+      .eye{transform-box:fill-box;transform-origin:center;animation:blinkeye 4s infinite}
+      @keyframes blinkeye{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+      .row{animation:rowin .6s steps(4) both}
+      @keyframes rowin{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:translateX(0)}}
+      .scan{animation:scan 5s steps(10) infinite}
+      @keyframes scan{from{transform:translateY(0)}to{transform:translateY(300px)}}
+      .blink{animation:on 1s steps(1) infinite}
+      @keyframes on{50%{opacity:0}}
+      .heart{animation:pulse 1.8s steps(1) infinite}
+      @keyframes pulse{0%{opacity:1}50%{opacity:.35}}
+    </style>
+    <pattern id="dash" x="40" y="62" width="12" height="4" patternUnits="userSpaceOnUse"><rect width="8" height="4" fill="#C22B8E"/></pattern>
+    <pattern id="blkDim" x="300" y="404" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="14" height="16" fill="#2A2152"/></pattern>
+    <pattern id="blkLit" x="300" y="404" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="14" height="16" fill="#FDA136"/></pattern>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#FFFFFF" opacity=".035"/></pattern>
+    <clipPath id="xpClip">
+      <rect x="300" y="404" width="0" height="16">
+        <animate attributeName="width" dur="6s" repeatCount="indefinite" calcMode="discrete" values="0;16;32;48;64;80;96;112;128;144;160;176;192;208;224;240;256;272;288;304;320;336;352;368;384;400;416;432;448;464;480;496;512;528;544;560"/>
+      </rect>
+    </clipPath>
+    <g id="heart"><rect x="1" y="0" width="2" height="1"/><rect x="4" y="0" width="2" height="1"/><rect x="0" y="1" width="7" height="2"/><rect x="1" y="3" width="5" height="1"/><rect x="2" y="4" width="3" height="1"/><rect x="3" y="5" width="1" height="1"/></g>
+  </defs>
+
+  <!-- panel + animated pixel frame -->
+  <rect x="12" y="12" width="876" height="436" fill="#0A0618"/>
+  <g class="frame" fill="#C22B8E">
+    <rect x="16" y="8" width="868" height="4"/><rect x="16" y="448" width="868" height="4"/>
+    <rect x="8" y="16" width="4" height="428"/><rect x="888" y="16" width="4" height="428"/>
+    <rect x="12" y="12" width="4" height="4"/><rect x="884" y="12" width="4" height="4"/>
+    <rect x="12" y="444" width="4" height="4"/><rect x="884" y="444" width="4" height="4"/>
+  </g>
+
+  <!-- title bar -->
+  <text x="40" y="50" class="mono" font-size="18" font-weight="bold" fill="#FDA136" letter-spacing="2">PLAYER 1 // CHARACTER SHEET</text>
+  <text x="860" y="50" class="mono blink" font-size="14" font-weight="bold" fill="#C22B8E" text-anchor="end">1UP</text>
+  <rect x="40" y="62" width="820" height="4" fill="url(#dash)"/>
+
+  <!-- avatar -->
+  <rect x="42" y="82" width="196" height="226" fill="#1A1438" stroke="#2A2152" stroke-width="4"/>
+  <g class="bob">
+    <g transform="translate(68 104) scale(12)">
+      <g fill="#0A0618"><rect x="3" y="0" width="6" height="1"/><rect x="2" y="1" width="8" height="1"/><rect x="1" y="2" width="10" height="1"/><rect x="1" y="3" width="1" height="1"/><rect x="10" y="3" width="1" height="1"/></g>
+      <g fill="#F2B38A"><rect x="2" y="3" width="8" height="1"/><rect x="1" y="4" width="10" height="4"/><rect x="2" y="8" width="8" height="1"/><rect x="3" y="9" width="6" height="1"/></g>
+      <rect class="eye" x="3" y="5" width="1" height="1" fill="#0A0618"/>
+      <rect class="eye" x="8" y="5" width="1" height="1" fill="#0A0618"/>
+      <rect x="5" y="7" width="2" height="1" fill="#E4402A"/>
+      <g fill="#C22B8E"><rect x="2" y="10" width="8" height="1"/><rect x="1" y="11" width="10" height="1"/><rect x="0" y="12" width="12" height="2"/></g>
+      <rect x="5" y="10" width="2" height="1" fill="#FDA136"/>
+      <rect x="3" y="12" width="6" height="2" fill="#EDEDF3"/>
+      <rect x="5" y="12" width="2" height="1" fill="#FDA136"/>
+    </g>
+  </g>
+  <text x="140" y="296" class="mono" font-size="12" font-weight="bold" fill="#FDA136" text-anchor="middle" letter-spacing="2">P1 · READY</text>
+  <use xlink:href="#heart" class="heart" transform="translate(90 326) scale(4)" fill="#E4402A"/>
+  <use xlink:href="#heart" class="heart" style="animation-delay:.3s" transform="translate(126 326) scale(4)" fill="#E4402A"/>
+  <use xlink:href="#heart" class="heart" style="animation-delay:.6s" transform="translate(162 326) scale(4)" fill="#E4402A"/>
+  <text x="140" y="372" class="mono" font-size="10" fill="#8A84A8" text-anchor="middle" letter-spacing="2">LIVES</text>
+
+  <!-- stat rows -->
+  <rect x="280" y="80" width="590" height="30" fill="#120C2A"/>
+  <rect x="280" y="140" width="590" height="30" fill="#120C2A"/>
+  <rect x="280" y="200" width="590" height="30" fill="#120C2A"/>
+  <rect x="280" y="260" width="590" height="30" fill="#120C2A"/>
+  <rect x="280" y="320" width="590" height="30" fill="#120C2A"/>
+  <rect class="scan" x="280" y="80" width="590" height="30" fill="#FDA136" opacity=".12"/>
+
+  <g class="row" style="animation-delay:.1s"><rect x="286" y="92" width="6" height="6" fill="#C22B8E"/><text x="300" y="100" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">PLAYER</text><text x="440" y="100" class="mono" font-size="13" fill="#EDEDF3">Mo'men Refaey</text></g>
+  <g class="row" style="animation-delay:.2s"><rect x="286" y="122" width="6" height="6" fill="#C22B8E"/><text x="300" y="130" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">CLASS</text><text x="440" y="130" class="mono" font-size="13" fill="#EDEDF3">Full-Stack Developer</text></g>
+  <g class="row" style="animation-delay:.3s"><rect x="286" y="152" width="6" height="6" fill="#C22B8E"/><text x="300" y="160" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">SUBCLASS</text><text x="440" y="160" class="mono" font-size="13" fill="#EDEDF3">AI Systems Builder</text></g>
+  <g class="row" style="animation-delay:.4s"><rect x="286" y="182" width="6" height="6" fill="#C22B8E"/><text x="300" y="190" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">GUILD</text><text x="440" y="190" class="mono" font-size="13" fill="#EDEDF3">Software Engineering Student</text></g>
+  <g class="row" style="animation-delay:.5s"><rect x="286" y="212" width="6" height="6" fill="#C22B8E"/><text x="300" y="220" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">REGION</text><text x="440" y="220" class="mono" font-size="13" fill="#EDEDF3">Egypt</text></g>
+  <g class="row" style="animation-delay:.6s"><rect x="286" y="242" width="6" height="6" fill="#C22B8E"/><text x="300" y="250" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">MAIN QUEST</text><text x="440" y="250" class="mono" font-size="13" fill="#EDEDF3">OctoFin · AI enterprise accounting</text></g>
+  <g class="row" style="animation-delay:.7s"><rect x="286" y="272" width="6" height="6" fill="#C22B8E"/><text x="300" y="280" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">SKILLS</text><text x="440" y="280" class="mono" font-size="13" fill="#EDEDF3">MEAN · Next.js · .NET · Python · Go</text></g>
+  <g class="row" style="animation-delay:.8s"><rect x="286" y="302" width="6" height="6" fill="#C22B8E"/><text x="300" y="310" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">CO-OP</text><text x="440" y="310" class="mono" font-size="13" fill="#EDEDF3">Open source (VOID IDE welcome)</text></g>
+  <g class="row" style="animation-delay:.9s"><rect x="286" y="332" width="6" height="6" fill="#C22B8E"/><text x="300" y="340" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">CONTACT</text><text x="440" y="340" class="mono" font-size="13" fill="#EDEDF3">moamen.refaey@hotmail.com</text></g>
+  <g class="row" style="animation-delay:1s"><rect x="286" y="362" width="6" height="6" fill="#C22B8E"/><text x="300" y="370" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">PERK</text><text x="440" y="370" class="mono" font-size="13" fill="#EDEDF3">"A good laugh can debug any code... eventually."</text></g>
+
+  <!-- quest progress bar -->
+  <text x="40" y="417" class="mono" font-size="12" font-weight="bold" fill="#FDA136" letter-spacing="1">QUEST PROGRESS // OCTOFIN</text>
+  <rect x="300" y="404" width="560" height="16" fill="url(#blkDim)"/>
+  <rect x="300" y="404" width="560" height="16" fill="url(#blkLit)" clip-path="url(#xpClip)"/>
+  <text x="860" y="438" class="mono blink" font-size="10" fill="#C22B8E" text-anchor="end" letter-spacing="2">BUILDING...</text>
+
+  <rect x="12" y="12" width="876" height="436" fill="url(#scanlines)"/>
+</svg>
