@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile.yml"
+      - ".github/scripts/**"
 
 permissions:
   contents: write
@@ -14,11 +19,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Generate activity graph
+        run: python3 .github/scripts/activity_graph.py
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&icon_color=C22B8E&border_color=C22B8E&ring_color=E4402A&border_radius=0
+          options: username=${{ github.repository_owner }}&custom_title=PLAYER%20STATS&show_icons=true&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&icon_color=E4402A&ring_color=C22B8E&hide_border=true&border_radius=0
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -26,11 +37,11 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&border_color=C22B8E&border_radius=0
+          options: username=${{ github.repository_owner }}&custom_title=WEAPONS%20OF%20CHOICE&layout=compact&langs_count=8&bg_color=0A0618&title_color=FDA136&text_color=EDEDF3&hide_border=true&border_radius=0
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit stats cards
+      - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -53,12 +64,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate contribution activity graph
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: main
-          UTC_OFFSET: 2
